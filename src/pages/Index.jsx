@@ -16,7 +16,7 @@ const Index = () => {
   const priceNOK = priceEUR * exchangeRate;
 
   return (
-    <Flex direction="column" align="center" p={8}>
+    <Flex direction="column" align="center" p={8} bg="gray.800" color="white">
       <Heading mb={4}>Choose Payment Method</Heading>
       <Text fontSize="xl" mb={2}>
         Price: {priceEUR} EUR / {priceNOK} NOK
@@ -34,7 +34,7 @@ const Index = () => {
           ))}
         </Stack>
       </RadioGroup>
-      <Button colorScheme="blue" mt={6} w="full">
+      <Button colorScheme="green" mt={6} w="full">
         Pay with {selectedPayment}
       </Button>
     </Flex>
